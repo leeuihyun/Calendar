@@ -1,0 +1,81 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Roboto';
+    background-color: #D7F9FF;
+}
+
+header{
+    display : flex;
+    justify-content: space-between;
+    background-color : #D7F9FF;
+    color : black;
+}
+
+header .header_logo{
+    display:flex;
+    align-items: center;
+    padding-left : 10px;    
+}
+
+header .header_logo i{
+    padding-right : 5px;
+}
+
+header .header_icon{
+    display:flex;
+    align-items: center;
+    padding-right:10px;
+}
+
+main{
+    display:flex;
+    justify-content: space-evenly;
+    background-color : #AFCBFF;
+    height : 500px;
+}
+
+.calendar_section{
+    display : flex;
+}
+.calendar_section .before {
+    padding-right : 10px;
+}
+.calendar_section table tr td {
+    width:40px;
+    height : 40px;
+    text-align: center;
+    font-size:15px;
+    font-weight: bold;
+}
+.calendar_section .before .before_button{
+    cursor : pointer;
+}
+.calendar_section .next .next_button{
+    cursor : pointer;
+}
+.calendar_section .next {
+    padding-left : 10px;
+}
+main .todo_section{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size : 15px;
+    font-weight: bold;
+}
+
+main .calendar_section{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    display : flex;
+    justify-content: center;
+    color : black;
+    background-color : #D7F9FF;
+}
