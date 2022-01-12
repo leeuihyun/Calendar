@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/894cc8a26d.js" crossorigin="anonymous"></script>
+    <title>Calendar</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <i class="fas fa-calendar"></i>
+            <h2>Calendar</h2>
+        </div>
+        <div class="header_icon">
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+    <main class="main_content">
+        <section class="todo_section">
+            <div class="todo_date_first_box">
+                <h1 class="todo_day"></h1>
+                <h1 class = "todo_date"></h1>
+            </div>
+            <div class="todo_title">
+                Todo List
+            </div>
+            <form class="todo_input">
+                <input type="text" placeholder="Write your todos here" class = "todo_input_text">
+                <button class="todo_input_button">input</button>
+            </form>
+            <div class="todo_box">
+                <ul class = "todo_ul"></ul>
+            </div>
+        </section>
+        <section class="calendar_section">
+            
+            <table class="calendar" align="center">
+                <thead>
+                    <tr class = "current_year_month_tr">
+                        <td>
+                            <div class="before">
+                                <button class="before_button">
+                                    <i class="fas fa-angle-double-left"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td id = "current_year_month_td" colspan=5 align="center"></td>
+                        <td>
+                            <div class="next">
+                                <button class="next_button">
+                                    <i class="fas fa-angle-double-right"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sun" align="center">Sun</td>
+                        <td class="mon">Mon</td>
+                        <td class="tue">Tue</td>
+                        <td class="wed">Wed</td>
+                        <td class="thu">Thu</td>
+                        <td class="fri">Fri</td>
+                        <td class="sat" align="center">Sat</td>
+                    </tr>
+                </thead>
+                <tbody class = "calendar_date"></tbody>
+            </table>
+            
+        </section>
+    </main> 
+    <footer class = "footer">Lee</footer>
+    <script src = "calendar.js"></script>
+</body>
+</html>
