@@ -79,3 +79,12 @@ footer{
     color : black;
     background-color : #D7F9FF;
 }
+
+.active{
+    background: #0b0809;
+    color: #ffffff;
+}
+
+td {
+    background-color : white;
+}

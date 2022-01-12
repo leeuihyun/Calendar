@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,14 +20,19 @@
     </header>
     <main class="main_content">
         <section class="todo_section">
+            <div class="todo_date_first_box">
+                <h1 class="todo_day"></h1>
+                <h1 class = "todo_date"></h1>
+            </div>
             <div class="todo_title">
                 Todo List
             </div>
-            <div class="todo_input">
+            <form class="todo_input">
                 <input type="text" placeholder="Write your todos here" class = "todo_input_text">
-            </div>
+                <button class="todo_input_button">input</button>
+            </form>
             <div class="todo_box">
-                <ul></ul>
+                <ul class = "todo_ul"></ul>
             </div>
         </section>
         <section class="calendar_section">
@@ -52,13 +57,13 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="sun" align="center">일</td>
-                        <td class="mon">월</td>
-                        <td class="tue">화</td>
-                        <td class="wed">수</td>
-                        <td class="thu">목</td>
-                        <td class="fri">금</td>
-                        <td class="sat" align="center">토</td>
+                        <td class="sun" align="center">Sun</td>
+                        <td class="mon">Mon</td>
+                        <td class="tue">Tue</td>
+                        <td class="wed">Wed</td>
+                        <td class="thu">Thu</td>
+                        <td class="fri">Fri</td>
+                        <td class="sat" align="center">Sat</td>
                     </tr>
                 </thead>
                 <tbody class = "calendar_date"></tbody>
